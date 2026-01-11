@@ -68,5 +68,4 @@ Feel free to fork this repository and add more examples or improve the existing 
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).</content>
-<parameter name="filePath">d:\MACHINE-LEARNING\Practice\README.md
+This project is open source and available under the [MIT License](LICENSE.txt).
