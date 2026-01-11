@@ -59,3 +59,89 @@ import numpy as np
 vector  = np.array([1, 2, 3, 4, 5])
 print("Created vector:", vector)
 
+# Problem 1:
+
+# Ek vector banao jo 1 se 10 tak ke even numbers store kare.
+vector = np.arange(2, 11, 2)
+print("New vector is", vector)
+
+"""
+Discussion:
+  Yahan np.arange(start, stop, step) use hua:
+  start = 2
+  stop = 11 (11 isliye diya kyun ke stop include nahi hota)
+  step = 2
+Is se humein automatically even numbers mil gaye bina loop likhe. Traditional tareeqa hota loop se, lekin NumPy ka style fast aur clean hota hai."""
+
+# Problem 2:
+
+# Ek vector banao jismein 5 random decimal numbers hon jo 0 aur 1 ke beech hon.
+
+vector = np.random.rand(5)
+print("5 random decimals numbers:", vector)
+
+"""
+Discussion:
+  np.random.rand(5) ka matlab:
+  5 random values generate karo
+  Har value 0 aur 1 ke beech hogi
+Har dafa code chalane par different values aayengi. Ye technique machine learning, simulations, aur testing ke liye bohat use hoti hai, jahan dummy data chahiye hota hai."""
+
+#practice
+vector = np.random.rand(7)
+print("7 random decimals:", vector)
+
+vector = np.random.rand(77)
+print("77 random decimal numbers:", vector)
+
+# Problem 3
+
+# 0 se 1 tak 6 equally spaced values ka vector banao.
+
+vector = np.linspace(0, 1, 6)
+print("vector of 6 equally spaced values:", vector)
+
+"""
+Discussion:
+
+linspace(start, end, count) use hota hai jab tumhein range ko barabar parts mein divide karna ho. Ye data visualization aur scientific experiments mein bohat kaam aata hai."""
+
+#pratice:
+vector = np.linspace(2, 4, 12)
+print(vector)
+
+
+# Problem 4
+
+# Ek vector banao jismein sab values 7 hon, length 5.
+
+vector = np.full(5, 7)
+print("vector with 7", vector)
+
+"""
+Discussion:
+
+np.full(size, value) tab use hota hai jab tumhein same value se initialize karna ho, jaise default weights, masks, ya placeholders."""
+
+
+# Problem 5
+
+# Ek vector banao jismein pehle 4 zeros aur baqi 3 ones hon.
+
+vector = np.concatenate((np.zeros(4), np.ones(3)))
+print(vector)
+
+"""
+Discussion:
+
+zeros() aur ones() se simple vectors bante hain. concatenate() unhein jor kar complex structure banata hai. Ye technique labels aur flags banane mein kaam aati hai."""
+
+#Practice:
+vector = np.concatenate((np.zeros(100), np.ones(500)))
+print(vector)
+
+vector = np.concatenate((np.zeros(1000), np.ones(10000)))
+print(vector)
+
+vector = np.concatenate((np.ones(54), np.zeros(433)))
+print(vector)
